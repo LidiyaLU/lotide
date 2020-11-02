@@ -17,7 +17,7 @@ const countOnly = function(allItems, itemsToCount) {
   return result;
 };
 
-
+module.exports = countOnly;
 
 //TEST
 const firstNames = [

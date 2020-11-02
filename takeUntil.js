@@ -30,7 +30,9 @@ const takeUntil = function(data, filter) {
   }
 
   return result;
-}
+};
+
+module.exports = takeUntil;
 
 //TEST
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

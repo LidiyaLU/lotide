@@ -33,6 +33,8 @@ const letterPositions = function(string) {
   return letters;
 };
 
+module.exports = letterPositions;
+
 //TEST
 console.log(letterPositions('lighthouse in the house'));
 const greet = letterPositions('hello');

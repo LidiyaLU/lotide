@@ -14,6 +14,7 @@ const countLetters = function(string) {
   return letters;
 }
 
+module.exports = countLetters;
 //TEST
 
 console.log(countLetters('hello lu'));

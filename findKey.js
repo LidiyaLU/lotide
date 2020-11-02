@@ -38,7 +38,7 @@ let cityLocal = findKey({
   "Berlin": {tourist: 77, local: 78}
 }, x => x.local === 95); //=> "London"
 
-
+module.exports = findKey;
 assertEqual(movieStars, 'noma');
 assertEqual(cityTourist,"NY");
 assertEqual(cityLocal,"London");

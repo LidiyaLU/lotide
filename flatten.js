@@ -32,6 +32,7 @@ const flatten = function(arr) {
   return flat;
 };
 
+module.exports = flatten;
 const testQ = [1,2,[3,4],[5,6]];
 assertArraysEqual(flatten(testQ),[1,2,3,4,5,6]);
 assertArraysEqual(testQ, flatten(testQ));

@@ -1,22 +1,6 @@
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
-const assertArraysEqual = function(actual,expected) {
-  if (eqArrays(actual, expected) === true) {
-    console.log(`😃 Arrays are equal: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`😡 Arrays are NOT equal: [${actual}] !== [${expected}]`);
-  }
-}
+const assertArraysEqual = require('./assertArraysEqual');
 
 const map = function(array, callback) {
   let mapped = [];
@@ -24,7 +8,9 @@ const map = function(array, callback) {
     mapped.push(callback(item));
   } 
   return mapped;
-}
+};
+
+module.exports = map;
 
 //TEST
 const words = ["ground", "control", "to", "major", "tom"];
